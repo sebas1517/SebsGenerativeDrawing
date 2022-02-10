@@ -10,7 +10,7 @@ function setup() {
   line5 = new Lines(windowHeight/5);
   line6 = new Lines(windowHeight/6);
   line7 = new Lines(windowHeight/7);
-  line8 = new Lines(windowHeight/8);
+  line8 = new Lines(0);
 
   
   slider = createSlider(0.0, 2,0, 0.0, 0.05);
