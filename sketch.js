@@ -24,6 +24,7 @@ function draw() {
   line3.change();
   line4.change();
   line5.change();
+  line6.change();
   line7.change();
   line8.change();
 
