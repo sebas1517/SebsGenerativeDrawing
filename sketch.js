@@ -8,9 +8,10 @@ function setup() {
   line3 = new Lines(windowHeight/3);
   line4 = new Lines(windowHeight/4);
   line5 = new Lines(windowHeight/5);
-  line6 = new Lines(windowHeight/6);
-  line7 = new Lines(windowHeight/7);
-  line8 = new Lines(0);
+  line6 = new Lines(windowHeight-(windowHeight/4));
+  line7 = new Lines(windowHeight - (windowHeight/3));
+  line8 = new Lines(20);
+  line9 = new Lines(windowHeight - (windowHeight/5));
 
   
   slider = createSlider(0.0, 2,0, 0.0, 0.05);
@@ -27,6 +28,7 @@ function draw() {
   line6.change();
   line7.change();
   line8.change();
+  line9.change();
 
 }
 
