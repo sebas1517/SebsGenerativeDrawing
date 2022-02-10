@@ -49,6 +49,8 @@ class Lines {
       y = this.y - noise(xoff, yoff) * sin(xoff) *sin(20 * xoff) * 200 *slider.value();
       } else if (key == '2'){
       y = this.y - noise(xoff, yoff) * 120 * slider.value();
+      } else {
+      y = this.y - noise(xoff, yoff) * 120 * slider.value();
       }
       vertex(x,y);
       xoff += 0.01;
