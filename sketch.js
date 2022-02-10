@@ -43,9 +43,13 @@ class Lines {
     strokeWeight(4);
     noFill();
     let xoff = 0;
+    let y = this.y;
     for (let x = 0; x <= windowWidth; x += 1) {
-      let y = this.y - noise(xoff, yoff) * sin(xoff) *sin(20 * xoff) * 100 *slider.value();
-      //let y = this.y - noise(xoff, yoff) * 120 * slider.value();
+      if (key == '1'){
+      y = this.y - noise(xoff, yoff) * sin(xoff) *sin(20 * xoff) * 200 *slider.value();
+      } else if (key == '2'){
+      y = this.y - noise(xoff, yoff) * 120 * slider.value();
+      }
       vertex(x,y);
       xoff += 0.01;
     }
