@@ -44,7 +44,8 @@ class Lines {
     noFill();
     let xoff = 0;
     for (let x = 0; x <= windowWidth; x += 1) {
-      let y = this.y - noise(xoff, yoff) * 120 * slider.value();
+      let y = this.y - noise(xoff, yoff) * sin(xoff) *sin(20 * xoff) * 100 *slider.value();
+      //let y = this.y - noise(xoff, yoff) * 120 * slider.value();
       vertex(x,y);
       xoff += 0.01;
     }
